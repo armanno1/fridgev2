@@ -282,7 +282,7 @@ window.addEventListener('mousemove', (event) =>
 
 let open = false
 let doorRotation = - Math.PI * 0.6
-window.addEventListener('click', () =>
+window.addEventListener('mousedown', () =>
 {
     if (currentIntersect) {
         gsap.to(pivot_top.rotation, {duration: 0.5, y: doorRotation, repeat: 0, ease: "power1"});
